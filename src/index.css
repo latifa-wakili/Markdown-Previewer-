@@ -1,13 +1,141 @@
+/* General Body Styling */
 body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f4f6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 20px; /* Add padding to prevent content from touching the edges */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Change from center to flex-start to prevent vertical centering */
+  min-height: 100vh; /* Use min-height instead of height to allow scrolling */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Main App Styling */
+.App {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px 0; /* Add vertical margin to ensure spacing */
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.App-header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Textarea Styling */
+textarea#editor {
+  width: 100%;
+  height: 300px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  resize: none;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+textarea#editor:focus {
+  outline: none;
+  border-bottom: 2px solid #4a90e2;
+  background-color: #ffffff;
+}
+
+/* Preview Section Styling */
+#preview {
+  padding: 20px;
+  text-align: left;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 1rem;
+}
+
+#preview h1 {
+  color: #4a90e2;
+}
+
+#preview h2 {
+  color: #7d8ca3;
+}
+
+#preview h3 {
+  color: #4a90e2;
+}
+
+#preview code {
+  background-color: #f1f1f1;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#preview pre {
+  background-color: #282c34;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+#preview a {
+  color: #4a90e2;
+  text-decoration: none;
+  border-bottom: 1px dashed #4a90e2;
+}
+
+#preview a:hover {
+  text-decoration: underline;
+}
+
+#preview blockquote {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 5px solid #4a90e2;
+  color: #555;
+  font-style: italic;
+}
+
+#preview ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#preview ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+#preview img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    margin: 10px 0;
+    box-shadow: none;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  textarea#editor {
+    height: 200px;
+  }
 }
