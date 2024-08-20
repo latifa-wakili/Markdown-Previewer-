@@ -10,6 +10,9 @@ The Markdown Previewer is a React application that allows users to enter Markdow
 - **Default Markdown Content:** When the app first loads, it displays a sample Markdown content that includes various elements such as headings, lists, code blocks, and more.
 - **Markdown to HTML Rendering:** The app uses the `marked` library to convert Markdown text to HTML.
 
+## Demo 📸
+![Demo](Screenshot (46).png)
+
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
@@ -21,7 +24,7 @@ The Markdown Previewer is a React application that allows users to enter Markdow
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/markdown-previewer.git
+    git clone git@github.com:latifa-wakili/Markdown-Previewer-.git
     ```
 
 2. Navigate to the project directory:
@@ -74,6 +77,12 @@ The Markdown Previewer is a React application that allows users to enter Markdow
 4. Commit your changes (`git commit -am 'Add new feature'`).
 5. Push to the branch (`git push origin feature-branch`).
 6. Create a new Pull Request.
+
+## Author 👩‍💻
+- Twitter: [@Latifa_Wakili](https://x.com/WakiliLatifa?t=wlHTh8JuyFprQsN_hZQGWQ&s=08)
+- LinkedIn: [Latifa Wakili](https://www.linkedin.com/in/latifa-wakili-68423b277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- Email: [Latifa Wakili](saavenwakili@gmail.com)
+
 
 ## License
 
