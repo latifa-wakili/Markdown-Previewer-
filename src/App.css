@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(to bottom right, #f8f9fa, #b3cbe2);
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+.app {
+  max-width: 900px;
+  width: 100%; 
+  text-align: center;
+  background: white;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.app h1 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.book-form input {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.book-form input:focus {
+  border-color: #0056b3;
+}
+
+.book-form button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.book-form button:hover {
+  background: #0056b3;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-item {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.book-item h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.book-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+.book-item button {
+  background: #dc3545;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.book-item button:hover {
+  background: #b02a37;
+}
+
+
+@media (max-width: 768px) {
+  .app {
+    padding: 15px;
+  }
+
+  .book-form input {
+    width: 100%;
+  }
+
+  .book-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app h1 {
+    font-size: 1.5rem;
+  }
+
+  .book-item h3 {
+    font-size: 1rem;
+  }
+
+  .book-item p {
+    font-size: 0.9rem;
+  }
+}
