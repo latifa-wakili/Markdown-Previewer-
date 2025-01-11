@@ -11,7 +11,7 @@ The Markdown Previewer is a React application that allows users to enter Markdow
 - **Markdown to HTML Rendering:** The app uses the `marked` library to convert Markdown text to HTML.
 
 ## Demo 📸
-![Demo](picture.png)
+![Demo](library.png)
 
 ## Technologies Used
 
